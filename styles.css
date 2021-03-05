@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 ;
+
+}
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#fff;
+}
+
+body {
+    background-color: #0b86eb;
+}
+
+
+.container,
+.game {
+    position: absolute;
+    border-radius: 10px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+}
+.container{
+    display: none;
+}
+
+.true-false-line{
+    height: 10%;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 0.8rem;
+}
+.true-false-line span {
+    padding-right: 10px;
+}
+.small{
+    font-size: 0.5rem;
+
+}
+
+.question-title{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.question-number {
+    background-color: #fff;
+    height: 25px;
+    border-radius: 50%;
+    width: 25px;
+    color:#000;
+    font-size: 0.7rem;
+    box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto 30px;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+
+}
+
+.choice{
+    color:#000;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.true{
+    box-shadow: 0px 7px 45px 5px rgba(0,255,38,1);
+    color:#000;
+    border:1px solid rgba(0,255,38,1);
+}
+
+.false{
+    box-shadow: 0px 7px 45px 5px rgb(255, 0, 0);
+    color:#000;
+    border: 1px solid rgba(255,0,0);
+}
+
+input{
+    border:none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    outline: none;
+    color:#fff;
+    display: block;
+    margin:auto;
+    
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.226);
+}
+.btn,
+.go-start,
+.reset-localstorage{
+    margin-top:50px;
+    border:1px solid #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    color:#fff;
+    outline: none;
+    cursor: pointer;
+}
+.go-start{
+    width: 150px;
+    margin:20px auto;
+}
+.reset-localstorage{
+    
+    margin:20px auto;
+}
