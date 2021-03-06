@@ -198,11 +198,11 @@ choices.addEventListener("click", function (e) {
 //Show Score UI , reset Local Storage
 function showScore() {
     container.textContent = "";
-    container.innerHTML += `<p><b>${getQuiz.index} soruda ${getQuiz.score} puan aldınız </b><br><br>    </p>`;
+    container.innerHTML += `<p><b>You got ${getQuiz.index} points in ${getQuiz.score} questions </b><br><br>    </p>`;
     for (var i = 0, len = localStorage.length; i < len; i++) {
         var key = localStorage.key(i);
         var value = localStorage[key];
-        container.innerHTML += `<p>${key} kullanıcısı ${value} puan aldı <br><br></p>`
+        container.innerHTML += `<p>${key} user scored ${value} point<br><br></p>`
     }
     container.innerHTML += `<div class="reset-localstorage">Reset History</div>`;
     container.innerHTML += `<div class="go-start">Return to quiz start</div>`;
